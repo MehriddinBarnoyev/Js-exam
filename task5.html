@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="javascript">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js exam</title>
+</head>
+
+<body>
+
+    <select id="dasy">
+        <option value="disable">Choose a day</option>
+        <option value="Morning">Morning</option>
+        <option value="Afternoon">Afternoon</option>
+        <option value="Evening">Evening</option>
+    </select>
+
+    <button onclick="says()">Say day</button>
+
+    <h1 id="das11"></h1>
+    <script>
+        function says() {
+            const days = document.getElementById('dasy').value;
+            const das11 = document.getElementById('das11');
+            switch (days) {
+                case 'Morning':
+                    das11.innerText = 'Xayrli tong';
+                    break
+                case 'Afternoon':
+                    das11.innerText = "Xayrli kun"
+                    break;
+                case 'Evening':
+                    das11.innerText = "Xayrli kech"
+                    break;
+                default:
+                    alert('Please select a season!');
+                    return;
+            }
+        }
+    </script>
+</body>
+
+</html>
